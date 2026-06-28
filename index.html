@@ -4,19 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amanah Events | Anti-Photography Events Service</title>
-  <meta name="description" content="Sydney's leading anti-photography service helping families host private events with complete peace of mind." />
+  <meta name="description" content="Sydney's leading anti-photography service helping families host private events with privacy and peace of mind." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Amanah Events home">
-      <img src="assets/amanah-logo.png" alt="Amanah Events logo" />
+      <img src="./assets/amanah-logo.png" alt="Amanah Events logo">
+      <span><b>AMANAH</b><small>EVENTS</small></span>
     </a>
-    <button class="menu-toggle" aria-label="Open menu">☰</button>
-    <nav class="nav-links">
+
+    <nav class="nav-links" id="navLinks">
       <a class="active" href="#home">Home</a>
       <a href="#service">Our Service</a>
       <a href="#why-us">Why Us</a>
@@ -25,12 +26,15 @@
       <a href="#faqs">FAQs</a>
       <a href="#contact">Contact</a>
     </nav>
+
     <a class="header-cta" href="https://frame9aee5.web.app/enquiry">Enquire Now</a>
+    <button class="menu-toggle" aria-label="Open menu" aria-controls="navLinks">☰</button>
   </header>
 
   <main>
     <section id="home" class="hero">
-      <div class="hero-bg"></div>
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
       <div class="hero-content">
         <p class="eyebrow">Sydney’s Leading</p>
         <h1>Anti-Photography <span>Events Service</span></h1>
@@ -38,31 +42,27 @@
         <p class="hero-text">We help you host your event with complete privacy and peace of mind. No unwanted photos, no distractions.</p>
         <div class="hero-actions">
           <a class="primary-btn" href="https://frame9aee5.web.app/enquiry">Enquire Now</a>
-          <a class="play-link" href="#process"><span>▷</span> How It Works</a>
+          <a class="play-link" href="#process"><span>▶</span> How It Works</a>
         </div>
       </div>
     </section>
 
     <section id="why-us" class="trust-strip">
       <article>
-        <div class="line-icon">◇</div>
-        <h3>Complete Privacy</h3>
-        <p>Your privacy is our amanah.</p>
+        <svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3.4 8.5-7 10-3.6-1.5-7-5-7-10V6l7-3z"/><path d="M9 12l2 2 4-5"/></svg>
+        <div><h3>Complete Privacy</h3><p>Your privacy is our amanah.</p></div>
       </article>
       <article>
-        <div class="line-icon">○</div>
-        <h3>Professional Team</h3>
-        <p>Trained staff to ensure policy is respected.</p>
+        <svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/><path d="M4 21c1.5-4 4.2-6 8-6s6.5 2 8 6"/></svg>
+        <div><h3>Professional Team</h3><p>Trained staff to ensure policy is respected.</p></div>
       </article>
       <article>
-        <div class="line-icon">◎</div>
-        <h3>Fully Managed</h3>
-        <p>From entry to exit, we’ve got it covered.</p>
+        <svg viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/><circle cx="12" cy="12" r="4"/></svg>
+        <div><h3>Fully Managed</h3><p>From entry to exit, we’ve got it covered.</p></div>
       </article>
       <article>
-        <div class="line-icon">⌁</div>
-        <h3>Trusted by Clients</h3>
-        <p>Reliable privacy support for private events.</p>
+        <svg viewBox="0 0 24 24"><path d="M8 12l4 4 8-8"/><path d="M3 12l4 4 4-4"/></svg>
+        <div><h3>Trusted by Clients</h3><p>Hundreds of successful events across Sydney.</p></div>
       </article>
     </section>
 
@@ -70,58 +70,40 @@
       <p class="section-label">Our Service</p>
       <h2>We Protect Your Moments</h2>
       <div class="service-grid">
-        <article class="service-card">
-          <img src="assets/service-privacy.jpg" alt="Private event setup" />
-          <div class="service-overlay">
-            <div class="service-icon">♙</div>
-            <h3>Event Privacy Management</h3>
-          </div>
-        </article>
-        <article class="service-card">
-          <img src="assets/service-pouches.jpg" alt="Phone privacy pouches" />
-          <div class="service-overlay">
-            <div class="service-icon">⊘</div>
-            <h3>Anti-Photography Enforcement</h3>
-          </div>
-        </article>
-        <article class="service-card">
-          <img src="assets/service-booth.jpg" alt="Amanah Events booth" />
-          <div class="service-overlay">
-            <div class="service-icon">◌</div>
-            <h3>Professional Event Staff</h3>
-          </div>
-        </article>
+        <article class="service-card"><img src="./assets/service-privacy.jpg" alt="Event privacy management"><div><span>01</span><h3>Event Privacy Management</h3></div></article>
+        <article class="service-card"><img src="./assets/service-pouches.jpg" alt="Anti photography enforcement"><div><span>02</span><h3>Anti-Photography Enforcement</h3></div></article>
+        <article class="service-card"><img src="./assets/service-booth.jpg" alt="Professional event staff"><div><span>03</span><h3>Professional Event Staff</h3></div></article>
       </div>
     </section>
 
-    <section id="process" class="section split-section">
-      <div>
+    <section id="process" class="section process-section">
+      <div class="process-intro">
         <p class="section-label">How It Works</p>
         <h2>A calm, respectful process for every guest.</h2>
       </div>
       <div class="steps">
         <article><span>01</span><h3>Enquiry</h3><p>Share your event date, venue and privacy requirements.</p></article>
-        <article><span>02</span><h3>Setup</h3><p>Our team arrives early with signage, desk setup and secure pouches.</p></article>
-        <article><span>03</span><h3>Management</h3><p>Guests are guided professionally while your event stays private.</p></article>
+        <article><span>02</span><h3>Setup</h3><p>Our team arrives early with signage, table setup and secure phone pouches.</p></article>
+        <article><span>03</span><h3>Management</h3><p>Guests are guided professionally while your private event stays peaceful.</p></article>
       </div>
     </section>
 
     <section id="gallery" class="section gallery-section">
       <p class="section-label">Gallery</p>
-      <h2>Designed to look professional at premium events.</h2>
+      <h2>Premium privacy support, designed to blend into your event.</h2>
       <div class="gallery-grid">
-        <img src="assets/hero-event-setup.jpg" alt="Amanah Events display setup" />
-        <img src="assets/service-privacy.jpg" alt="Privacy signage setup" />
-        <img src="assets/service-pouches.jpg" alt="Secure phone pouches" />
+        <img src="./assets/service-booth.jpg" alt="Amanah event booth">
+        <img src="./assets/service-pouches.jpg" alt="Phone privacy pouches">
+        <img src="./assets/service-privacy.jpg" alt="Privacy signage">
       </div>
     </section>
 
     <section id="faqs" class="section faq-section">
       <p class="section-label">FAQs</p>
       <h2>Common Questions</h2>
-      <details open><summary>What does anti-photography service include?</summary><p>Guest guidance, visible signage, secure phone pouches and privacy management during the event.</p></details>
-      <details><summary>Can this be used for weddings and private family events?</summary><p>Yes. The service is designed for weddings, family functions and private gatherings where privacy matters.</p></details>
-      <details><summary>How do clients enquire?</summary><p>Click the enquiry button and submit the form with your event details.</p></details>
+      <details open><summary>What does the service include?</summary><p>Guest guidance, privacy signage, secure phone pouches and professional event privacy management.</p></details>
+      <details><summary>Is it suitable for weddings and family events?</summary><p>Yes. It is made for weddings, private family gatherings and events where guest privacy matters.</p></details>
+      <details><summary>How can I book?</summary><p>Click Enquire Now and submit your event details through the enquiry form.</p></details>
     </section>
 
     <section id="contact" class="final-cta">
